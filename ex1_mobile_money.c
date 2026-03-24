@@ -3,7 +3,6 @@
 //25/U/BIE/01360/PE
 #include<stdio.h>
 int main(){
-    #include <stdio.h>
     float amount, fee_percent, fee, total;
 
     printf("Enter amount to send: ");
