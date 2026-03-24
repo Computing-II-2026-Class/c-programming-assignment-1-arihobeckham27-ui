@@ -3,15 +3,19 @@
 //25/U/BIE/01360/PE
 #include<stdio.h>
 int main(){
-    float amount_to_send, total_deducted, fee_amount, fee_percentage;
-    fee_percentage=1.5;
+    #include <stdio.h>
+    float amount, fee_percent, fee, total;
 
-    printf("enter amount to send");
-    scanf("%f",&amount_to_send);
-    
-    fee_amount=(fee_percentage/100)*amount_to_send;
-    total_deducted=amount_to_send+fee_amount;
-    printf("fee_amount:%.2f\n",&fee_amount);
-    printf("total_amount_deducted:%.2f\n",&total_deducted);
+    printf("Enter amount to send: ");
+    scanf("%f", &amount);
+
+    printf("Enter transaction fee (%%): ");
+    scanf("%f", &fee_percent);
+
+    fee = (fee_percent / 100) * amount;
+    total = amount + fee;
+
+    printf("\nTransaction fee: %.2f UGX\n", fee);
+    printf("Total deducted: %.2f UGX\n", total);
     return 0;
 }
